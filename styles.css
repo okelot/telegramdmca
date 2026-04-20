@@ -1,15 +1,15 @@
 :root {
-  --bg: #f6f1e8;
-  --surface: rgba(255, 255, 255, 0.76);
-  --surface-strong: #fffaf2;
-  --text: #112018;
-  --muted: #4a5f53;
-  --line: rgba(17, 32, 24, 0.12);
-  --accent: #12664f;
-  --accent-strong: #0b4e3c;
-  --accent-soft: #e2f1e7;
-  --highlight: #f4b860;
-  --shadow: 0 22px 60px rgba(24, 44, 32, 0.12);
+  --bg: #fff1e4;
+  --surface: rgba(255, 250, 244, 0.82);
+  --surface-strong: #fff8f1;
+  --text: #2c1608;
+  --muted: #71523d;
+  --line: rgba(44, 22, 8, 0.12);
+  --accent: #e26a1b;
+  --accent-strong: #bf4f08;
+  --accent-soft: #ffe1c7;
+  --highlight: #ffb347;
+  --shadow: 0 22px 60px rgba(98, 42, 9, 0.14);
   --radius: 24px;
   --shell: min(1120px, calc(100vw - 2rem));
 }
@@ -27,9 +27,9 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(244, 184, 96, 0.3), transparent 24rem),
-    radial-gradient(circle at top right, rgba(18, 102, 79, 0.14), transparent 26rem),
-    linear-gradient(180deg, #fff9ef 0%, var(--bg) 100%);
+    radial-gradient(circle at top left, rgba(255, 179, 71, 0.34), transparent 24rem),
+    radial-gradient(circle at top right, rgba(226, 106, 27, 0.18), transparent 26rem),
+    linear-gradient(180deg, #fff8f1 0%, var(--bg) 100%);
   line-height: 1.6;
 }
 
@@ -56,8 +56,8 @@ img {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(18px);
-  background: rgba(246, 241, 232, 0.75);
-  border-bottom: 1px solid rgba(17, 32, 24, 0.08);
+  background: rgba(255, 241, 228, 0.82);
+  border-bottom: 1px solid rgba(44, 22, 8, 0.08);
 }
 
 .site-header .shell {
@@ -297,8 +297,8 @@ dd {
   grid-template-columns: 1fr auto;
   align-items: center;
   background:
-    linear-gradient(135deg, rgba(18, 102, 79, 0.95), rgba(14, 59, 47, 0.95)),
-    linear-gradient(135deg, rgba(244, 184, 96, 0.25), transparent);
+    linear-gradient(135deg, rgba(226, 106, 27, 0.96), rgba(163, 62, 7, 0.96)),
+    linear-gradient(135deg, rgba(255, 179, 71, 0.3), transparent);
   color: white;
   border-radius: calc(var(--radius) + 8px);
   box-shadow: var(--shadow);
@@ -386,7 +386,7 @@ dd {
     align-items: stretch;
     padding: 1rem;
     border-radius: 20px;
-    background: rgba(255, 250, 242, 0.96);
+    background: rgba(255, 247, 239, 0.97);
     border: 1px solid var(--line);
     box-shadow: var(--shadow);
   }
