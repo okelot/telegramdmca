@@ -428,6 +428,98 @@ dd {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.market-picks,
+.provider-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.market-picks {
+  grid-template-columns: 1.15fr 1fr 1fr;
+  margin-bottom: 1.25rem;
+}
+
+.market-pick,
+.provider-card {
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: 0 14px 34px rgba(98, 42, 9, 0.08);
+}
+
+.market-pick {
+  padding: 1.4rem;
+}
+
+.market-pick-featured,
+.provider-card-featured {
+  background:
+    linear-gradient(135deg, rgba(226, 106, 27, 0.12), rgba(255, 179, 71, 0.14)),
+    var(--surface-strong);
+  border-color: rgba(226, 106, 27, 0.26);
+}
+
+.market-pick p,
+.provider-card-head p {
+  margin: 0 0 0.45rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.market-pick h3,
+.provider-card h3 {
+  margin-bottom: 0.45rem;
+}
+
+.market-pick span {
+  display: block;
+  color: var(--muted);
+}
+
+.provider-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.provider-card {
+  overflow: hidden;
+}
+
+.provider-card-head {
+  padding: 1.25rem 1.25rem 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.provider-meta {
+  display: grid;
+  margin: 0;
+}
+
+.provider-meta div {
+  display: grid;
+  grid-template-columns: minmax(8rem, 0.42fr) 1fr;
+  gap: 1rem;
+  padding: 0.9rem 1.25rem;
+  border-bottom: 1px solid rgba(44, 22, 8, 0.08);
+}
+
+.provider-meta div:last-child {
+  border-bottom: 0;
+}
+
+.provider-meta dt {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.88rem;
+}
+
+.provider-meta dd {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .site-footer {
   padding: 2rem 0 2.5rem;
   border-top: 1px solid var(--line);
@@ -465,9 +557,16 @@ dd {
   .link-grid,
   .comparison-summary,
   .competitor-notes,
+  .market-picks,
+  .provider-grid,
   .footer-grid,
   .cta-band {
     grid-template-columns: 1fr;
+  }
+
+  .provider-meta div {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
   }
 
   .site-nav {
