@@ -336,6 +336,98 @@ dd {
   padding-left: 1.25rem;
 }
 
+.comparison-page h1 {
+  max-width: 13ch;
+}
+
+.comparison-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.comparison-summary article {
+  display: grid;
+  gap: 0.55rem;
+  padding: 1.35rem;
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+}
+
+.comparison-summary span {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.comparison-summary strong {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.15rem;
+}
+
+.comparison-summary p {
+  margin: 0;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface-strong);
+  box-shadow: var(--shadow);
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 980px;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.comparison-table th {
+  background: rgba(226, 106, 27, 0.1);
+  color: var(--text);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.comparison-table th:first-child,
+.comparison-table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--surface-strong);
+  font-weight: 800;
+}
+
+.comparison-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.comparison-table tbody tr:nth-child(even) td {
+  background: rgba(255, 225, 199, 0.25);
+}
+
+.comparison-table tbody tr:nth-child(even) td:first-child {
+  background: #fff1e4;
+}
+
+.competitor-notes {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .site-footer {
   padding: 2rem 0 2.5rem;
   border-top: 1px solid var(--line);
@@ -371,6 +463,8 @@ dd {
   .three-up,
   .two-up,
   .link-grid,
+  .comparison-summary,
+  .competitor-notes,
   .footer-grid,
   .cta-band {
     grid-template-columns: 1fr;
